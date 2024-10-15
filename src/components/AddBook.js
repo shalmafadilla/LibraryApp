@@ -20,7 +20,7 @@ const AddBook = () => {
                 publication,
                 stock
             });
-            navigate("/book");
+            navigate("/admin/book");
         } catch (error) {
             console.log(error);
         }

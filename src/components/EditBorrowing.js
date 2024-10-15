@@ -37,7 +37,7 @@ const EditBorrowing = () => {
                 borrowFor,
                 status // Include status in the update
             });
-            navigate("/borrowing");
+            navigate("/admin/borrowing");
         } catch (error) {
             console.log(error);
         }

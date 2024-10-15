@@ -13,6 +13,15 @@ import Take from './items/Take';
 import Borrow from './items/Borrow';
 import Thankyou from './items/Thankyou';
 import LibraryHome from './items/LibraryHome';
+import RomeoJuliet from "./items/RomeoJuliet";
+import HilmyMilan from "./items/HilmyMilan";
+import GuaJepang from "./items/GuaJepang";
+import KKNDiDesaPenari from "./items/KKNDiDesaPenari";
+import KartunKalkulus from "./items/KartunKalkulus";
+import TheAlpha from "./items/TheAlpha";
+import Akar from "./items/Akar";
+import FilosofiTeras from "./items/FilosofiTeras";
+
 
 function App() {
   return (
@@ -23,15 +32,23 @@ function App() {
         <Route path="/Borrow" element={<Borrow />} />
         <Route path="/Thankyou" element={<Thankyou/>} />
         <Route path="/LibraryHome" element={<LibraryHome/>}/>
-        <Route path="/user" element={<UserList />} />
-        <Route path="/user/add" element={<AddUser />} />
-        <Route path="/user/edit/:id" element={<EditUser />} />
-        <Route path="/book" element={<BookList />} /> 
-        <Route path="/book/add" element={<AddBook />} /> 
-        <Route path="/book/edit/:id" element={<EditBook />} /> 
-        <Route path="/borrowing" element={<BorrowingList />} />
-        <Route path="/borrowing/add" element={<AddBorrowing />} />
-        <Route path="/borrowing/edit/:id" element={<EditBorrowing />} />
+        <Route path="/RomeoJuliet" element={<RomeoJuliet />} />
+        <Route path="/HilmyMilan" element={<HilmyMilan />} />
+        <Route path="/GuaJepang" element={<GuaJepang />} />
+        <Route path="/KKNDiDesaPenari" element={<KKNDiDesaPenari />} />
+        <Route path="/KartunKalkulus" element={<KartunKalkulus />} />
+        <Route path="/TheAlpha" element={<TheAlpha   />} />
+        <Route path="/Akar" element={<Akar/>} />
+        <Route path="/FilosofiTeras" element={<FilosofiTeras/>} />
+        <Route path="/admin/user" element={<UserList />} />
+        <Route path="/admin/user/add" element={<AddUser />} />
+        <Route path="/admin/user/edit/:id" element={<EditUser />} />
+        <Route path="/admin/book" element={<BookList />} /> 
+        <Route path="/admin/book/add" element={<AddBook />} /> 
+        <Route path="/admin/book/edit/:id" element={<EditBook />} /> 
+        <Route path="/admin/borrowing" element={<BorrowingList />} />
+        <Route path="/admin/borrowing/add" element={<AddBorrowing />} />
+        <Route path="/admin/borrowing/edit/:id" element={<EditBorrowing />} />
       </Routes>
     </BrowserRouter>
   );

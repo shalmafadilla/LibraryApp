@@ -34,7 +34,7 @@ const AddBorrowing = () => {
                 borrowFor,
                 status: "Pending" // Automatically set status
             });
-            navigate("/borrowing");
+            navigate("/admin/borrowing");
         } catch (error) {
             console.log(error);
         }

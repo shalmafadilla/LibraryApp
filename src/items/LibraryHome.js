@@ -10,7 +10,7 @@ import fiction from './assets/fiction.png';
 import horror from './assets/horror.png';
 import science from './assets/science.png';
 import selfdev from './assets/selfdev.png';
-import fiction1 from './assets/fiction1.png';
+import fiction1 from './assets/fiction1.jpg'
 import fiction2 from './assets/fiction2.png';
 import horror1 from './assets/horror1.png';
 import horror2 from './assets/horror2.png';
@@ -69,6 +69,7 @@ const Navbar = () => {
         border: '2px solid black',
         width: '130px'
     },
+
 }
 
     return (
@@ -138,7 +139,34 @@ const LibraryHome = () => {
         width: '50%',
         margin: '25px 50px 10px 50px',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        textAlign: 'center'
+    }
+
+    const action = {
+        display:'flex',
+        width:'70%',
+        textAlign:'center',
+        justifyContent:'space-between',
+        marginTop:'15px'
+    }
+
+    const view = {
+        borderRadius: '15px',
+        border: '2px solid black',
+        color:'black',
+        width:'40%',
+        padding:'4px 0px',
+        cursor: 'pointer'
+    }
+    const take = {
+        borderRadius: '15px',
+        border: '2px solid black',
+        backgroundColor: '#0CC5E5',
+        color:'black',
+        width:'40%',
+        padding:'4px 0px',
+        cursor: 'pointer'
     }
 
     const images = [slider2, slider1, slider3];
@@ -189,11 +217,19 @@ const LibraryHome = () => {
                             <img src={fiction1} alt="fiction" style={{ width: '150px' }} />
                             <p style={{fontSize: '24px'}}><b>Romeo Juliet</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>William SHakespare</p>
+                            <div style={action}>
+                            <Link style={view} to="/RomeoJuliet"><b>View</b></Link>
+                            <Link style={take} to="/Take"><b>Take</b></Link>
+                            </div>
                         </div>
                         <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <img src={fiction2} alt="fiction" style={{ width: '150px' }} />
                             <p style={{fontSize: '24px'}}><b>Himly Milan</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Nadia Ristivani</p>
+                            <div style={action}>
+                            <Link style={view} to="/HilmyMilan"><b>View</b></Link>
+                            <Link style={take} to="/Take"><b>Take</b></Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -204,11 +240,19 @@ const LibraryHome = () => {
                             <img src={horror1} alt="horror" style={{ width: '150px' }} />
                             <p style={{fontSize: '24px'}}><b>Gua Jepang</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Kisah Tanah Jawa</p>
+                            <div style={action}>
+                            <Link style={view} to="/GuaJepang"><b>View</b></Link>
+                            <Link style={take} to="/Take"><b>Take</b></Link>
+                            </div>
                         </div>
                         <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <img src={horror2} alt="horror" style={{ width: '150px' }} />
                             <p style={{fontSize: '24px'}}><b>KKN di Desa Penari</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Simpelman</p>
+                            <div style={action}>
+                            <Link style={view} to="/KKNDiDesaPenari"><b>View</b></Link>
+                            <Link style={take} to="/Take"><b>Take</b></Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,11 +263,19 @@ const LibraryHome = () => {
                             <img src={science1} alt="science" style={{ width: '150px' }} />
                             <p style={{fontSize: '24px'}}><b>Akar</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Dee Lestari</p>
+                            <div style={action}>
+                            <Link style={view} to="Akar"><b>View</b></Link>
+                            <Link style={take} to="/Take"><b>Take</b></Link>
+                            </div>
                         </div>
                         <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <img src={science2} alt="science" style={{ width: '150px' }} />
                             <p style={{fontSize: '24px'}}><b>Kartun Kalkulus</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Larry Gonick</p>
+                            <div style={action}>
+                            <Link style={view} to="KartunKalkulus"><b>View</b></Link>
+                            <Link style={take} to="/Take"><b>Take</b></Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,15 +286,33 @@ const LibraryHome = () => {
                             <img src={selfdev1} alt="selfdev" style={{ width: '150px' }} />
                             <p style={{fontSize: '24px'}}><b>The Alpha Girl's Guide</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Henry Manampiring</p>
+                            <div style={action}>
+                            <Link style={view} to="/TheAlpha"><b>View</b></Link>
+                            <Link style={take} to="/Take"><b>Take</b></Link>
+                            </div>
                         </div>
                         <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <img src={selfdev2} alt="selfdev" style={{ width: '150px' }} />
                             <p style={{fontSize: '24px'}}><b>Filosofi Teras</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Henry Mnamiring</p>
+                            <div style={action}>
+                            <Link style={view} to="/FilosofiTeras"><b>View</b></Link>
+                            <Link style={take} to="/Take"><b>Take</b></Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div style={{
+                backgroundColor:'#C0C7D4',
+                color:'black',
+                padding: '50px',
+                textAlign: 'center'
+            }}>
+                <h4>
+                    <b>BookSpace 2024 &copy; All Right Reserved.</b>
+                </h4>
+            </div>
         </section>
     );
 };

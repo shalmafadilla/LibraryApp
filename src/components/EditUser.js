@@ -23,7 +23,7 @@ const EditUser = () => {
                 gender,
                 telp
             });
-            navigate("/user")
+            navigate("/admin/user")
         } catch (error) {
             console.log(error);
         }
