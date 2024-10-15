@@ -20,7 +20,7 @@ const Navbar = () => {
 
         navMenuStyle: {
             display: 'flex',
-            gap: '15px'
+            gap: '15px',
         },
 
         navItemStyle: {
@@ -31,15 +31,15 @@ const Navbar = () => {
             backgroundColor: '#f4f4f4',
             borderRadius: '10px',
             border: '2px solid black',
-            width: '130px',
+            width:'130px'
         },
     };
 
     return (
         <header style={styles.headerStyle}>
-            <nav style={{display:'flex', gap:'873px'}}>
-                    <div style={{color:'black', alignContent:'center', fontSize:'28px'}}>
-                        <h1><b>POV ADMIN</b></h1>
+            <nav style={{display:'flex', gap:'735px'}}>
+                    <div style={{color:'black', alignContent:'center', fontSize:'28px', width:'300px'}}>
+                        <h1><b>BOOK SPACE's ADMIN</b></h1>
                     </div>
                 <div style={styles.navMenuStyle}>    
                     <Link to="/admin/user" style={styles.navItemStyle}><b>User</b></Link>

@@ -169,7 +169,7 @@ const LibraryHome = () => {
         cursor: 'pointer'
     }
 
-    const images = [slider2, slider1, slider3];
+    const images = [slider1, slider2, slider3];
 
 
     return (
@@ -178,7 +178,7 @@ const LibraryHome = () => {
             <Carousel showThumbs={false} autoPlay infiniteLoop>
                 {images.map((image, index) => (
                     <div key={index}>
-                        <img src={image} alt={''} />
+                        <img src={image} alt={''} style={{ width: '100%', height: '100%', objectFit: 'cover' }}/>
                     </div>
                 ))}
             </Carousel>
