@@ -36,7 +36,8 @@ const Navbar = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '10px 50px'
+        padding: '10px 50px',
+        boxShadow: '0 7px 10px rgba(0, 0, 0, 0.1)'
     },
 
     logoStyle: {
@@ -214,7 +215,7 @@ const LibraryHome = () => {
                     <h1 style={{ fontSize: '40px', borderBottom: '3px solid #a4a4a4', }}>Fiction Books</h1>
                     <div style={contBook}>
                         <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={fiction1} alt="fiction" style={{ width: '150px' }} />
+                            <img src={fiction1} alt="fiction" style={{ width: '150px', border: '1px solid black' }} />
                             <p style={{fontSize: '24px'}}><b>Romeo Juliet</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>William SHakespare</p>
                             <div style={action}>
@@ -223,7 +224,7 @@ const LibraryHome = () => {
                             </div>
                         </div>
                         <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={fiction2} alt="fiction" style={{ width: '150px' }} />
+                            <img src={fiction2} alt="fiction" style={{ width: '150px', border: '1px solid black' }} />
                             <p style={{fontSize: '24px'}}><b>Himly Milan</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Nadia Ristivani</p>
                             <div style={action}>
@@ -237,7 +238,7 @@ const LibraryHome = () => {
                     <h1 style={{ fontSize: '40px', borderBottom: '3px solid #a4a4a4', }}>Horror Books</h1>
                     <div style={contBook}>
                     <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={horror1} alt="horror" style={{ width: '150px' }} />
+                            <img src={horror1} alt="horror" style={{ width: '150px', border: '1px solid black' }} />
                             <p style={{fontSize: '24px'}}><b>Gua Jepang</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Kisah Tanah Jawa</p>
                             <div style={action}>
@@ -246,7 +247,7 @@ const LibraryHome = () => {
                             </div>
                         </div>
                         <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={horror2} alt="horror" style={{ width: '150px' }} />
+                            <img src={horror2} alt="horror" style={{ width: '150px', border: '1px solid black' }} />
                             <p style={{fontSize: '24px'}}><b>KKN di Desa Penari</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Simpelman</p>
                             <div style={action}>
@@ -260,7 +261,7 @@ const LibraryHome = () => {
                     <h1 style={{ fontSize: '40px', borderBottom: '3px solid #a4a4a4', }}>Science Books</h1>
                     <div style={contBook}>
                     <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={science1} alt="science" style={{ width: '150px' }} />
+                            <img src={science1} alt="science" style={{ width: '150px', border: '1px solid black' }} />
                             <p style={{fontSize: '24px'}}><b>Akar</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Dee Lestari</p>
                             <div style={action}>
@@ -269,7 +270,7 @@ const LibraryHome = () => {
                             </div>
                         </div>
                         <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={science2} alt="science" style={{ width: '150px' }} />
+                            <img src={science2} alt="science" style={{ width: '150px', border: '1px solid black' }} />
                             <p style={{fontSize: '24px'}}><b>Kartun Kalkulus</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Larry Gonick</p>
                             <div style={action}>
@@ -283,7 +284,7 @@ const LibraryHome = () => {
                     <h1 style={{ fontSize: '40px', borderBottom: '3px solid #a4a4a4', }}>Self Development Books</h1>
                     <div style={contBook}>
                     <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={selfdev1} alt="selfdev" style={{ width: '150px' }} />
+                            <img src={selfdev1} alt="selfdev" style={{ width: '150px', border: '1px solid black' }} />
                             <p style={{fontSize: '24px'}}><b>The Alpha Girl's Guide</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Henry Manampiring</p>
                             <div style={action}>
@@ -292,7 +293,7 @@ const LibraryHome = () => {
                             </div>
                         </div>
                         <div style={{ ...books, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <img src={selfdev2} alt="selfdev" style={{ width: '150px' }} />
+                            <img src={selfdev2} alt="selfdev" style={{ width: '150px', border: '1px solid black' }} />
                             <p style={{fontSize: '24px'}}><b>Filosofi Teras</b></p>
                             <p style={{color: '#a4a4a4', fontSize: '20px'}}>Henry Mnamiring</p>
                             <div style={action}>
