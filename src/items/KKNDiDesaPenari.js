@@ -2,47 +2,49 @@ import React from 'react';
 import bookCover from './assets/horror2.png';
 
 const styles = {
-    bookContainer: {
-        display: 'flex',
-        padding: '20px',
-        background: 'white',
-    },
-    bookCover: {
-        maxWidth: '600px',
-        borderRadius: '15px',
-        padding: '15px',
-        width: '40%',
-        margin: '25px 50px 10px 50px',
-        textAlign: 'center',
-    },
-    image: {
-        width: '75%',
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.5)'
-    },
-    bookDetails: {
-        color: 'black',
-        maxWidth: '600px',
-        borderRadius: '15px',
-        padding: '30px',
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
-        width: '60%',
-        margin: '25px 50px 10px 50px',
-        
-    },
-    title: {
-        marginBottom: '10px',
-        fontSize: '30px',
-        fontWeight: 'bold'
+  bookContainer: {
+      display: 'flex',
+      padding: '20px',
+      background: 'white',
+      paddingLeft: '100px',
+      minHeight: '100vh',
+  },
+  bookCover: {
+      maxWidth: '600px',
+      borderRadius: '15px',
+      padding: '15px',
+      width: '40%',
+      margin: '25px 50px 10px 50px',
+      textAlign: 'center',
+  },
+  image: {
+      width: '75%',
+      boxShadow: '0 2px 10px rgba(0, 0, 0, 0.5)'
+  },
+  bookDetails: {
+      color: 'black',
+      maxWidth: '600px',
+      borderRadius: '15px',
+      padding: '30px',
+      boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
+      width: '60%',
+      margin: '25px 50px 10px 50px',
       
-    },
-    subtitle: {
-        marginTop: '20px',
-        fontWeight: 'bold'
-    },
-    description: {
-        textAlign: 'justify',
-    },
-  };
+  },
+  title: {
+      marginBottom: '10px',
+      fontSize: '30px',
+      fontWeight: 'bold'
+    
+  },
+  subtitle: {
+      marginTop: '20px',
+      fontWeight: 'bold'
+  },
+  description: {
+      textAlign: 'justify',
+  },
+};
 
 function KKNDiDesaPenari() {
   return (
