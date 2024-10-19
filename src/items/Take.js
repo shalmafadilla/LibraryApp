@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 // Definisikan CSS menggunakan const
 const styles = {
@@ -133,6 +133,7 @@ const AddUser = () => {
                             required
                         />
                     </div>
+                    <Link to="/Borrow" >Sudah pernah pinjam sebelumnya.</Link>
                     <div style={{ marginTop: '20px' }}>
                         <button type="submit" style={styles.button}><b>Save</b></button>
                     </div>

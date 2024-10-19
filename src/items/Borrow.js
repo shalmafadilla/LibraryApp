@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const AddBorrowing = () => {
     const [userId, setUserId] = useState("");
@@ -147,10 +147,12 @@ const AddBorrowing = () => {
                                     ))}
                                 </select>
                             </div>
-                        </div></div>
+                        </div>
+                        </div>
                     </div>
-                    <div style={styles.field}>
-                        <button type='submit' style={styles.button}>Take</button>
+                    <Link to="/Take">Belum pernah pinjam sebelumnya.</Link>
+                    <div style={{marginTop:'20px'}}>
+                        <button type='submit' style={styles.button }>Take</button>
                     </div>
                 </form>
             </div>
